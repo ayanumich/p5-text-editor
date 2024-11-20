@@ -176,6 +176,7 @@ private:
   //EFFECTS: Computes the column of the cursor within the current row.
   //NOTE: This does not assume that the "column" member variable has
   //      a correct value (i.e. the row/column INVARIANT can be broken).
+  // DO THIS BEFORE DOING backward() !!
   int compute_column() const;
 };
 
